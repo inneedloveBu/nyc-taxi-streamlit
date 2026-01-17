@@ -1,0 +1,30 @@
+{
+  "timestamp": "2026-01-12 21:43:10",
+  "processing_time_seconds": 17.77,
+  "datasets": {
+    "hot_routes": {
+      "row_count": 100,
+      "file_path": "output/spark_advanced/hot_routes.csv"
+    },
+    "pickup_hotspots": {
+      "row_count": 50,
+      "file_path": "output/spark_advanced/pickup_hotspots.csv"
+    },
+    "dropoff_hotspots": {
+      "row_count": 50,
+      "file_path": "output/spark_advanced/dropoff_hotspots.csv"
+    },
+    "hourly_traffic": {
+      "row_count": 24,
+      "file_path": "output/spark_advanced/hourly_traffic.csv"
+    },
+    "daily_traffic": {
+      "row_count": 7,
+      "file_path": "output/spark_advanced/daily_traffic.csv"
+    },
+    "passenger_stats": {
+      "row_count": 5,
+      "file_path": "output/spark_advanced/passenger_stats.csv"
+    }
+  }
+}

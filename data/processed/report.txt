@@ -1,0 +1,12 @@
+NYC Taxi 数据分析报告 (Spark版)
+==================================================
+生成时间: 2026-01-12 21:43:10
+处理耗时: 17.77 秒
+
+数据集统计:
+  hot_routes: 100 行
+  pickup_hotspots: 50 行
+  dropoff_hotspots: 50 行
+  hourly_traffic: 24 行
+  daily_traffic: 7 行
+  passenger_stats: 5 行

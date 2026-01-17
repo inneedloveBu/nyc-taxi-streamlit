@@ -1,154 +1,145 @@
-# 🚕 NYC Taxi Analysis Dashboard
+🚕 NYC Taxi Analysis Dashboard
+An interactive Streamlit-based dashboard for visualizing and analyzing NYC taxi data processed with Spark, providing rich insights and analytics.
 
-一个基于Streamlit的交互式纽约出租车数据分析仪表板，可视化Spark处理结果，提供丰富的分析和洞察。
+✨ Features
+<img width="1440" height="765" alt="1" src="https://github.com/user-attachments/assets/8381b854-174a-4d50-8e1f-5b0d56d5fe56" /> <img width="1440" height="765" alt="3" src="https://github.com/user-attachments/assets/2d8a1063-f66d-42e5-a80f-8572066803e6" /> <img width="1440" height="765" alt="2" src="https://github.com/user-attachments/assets/155162d6-970c-42ac-aeae-38c9dd9e3cc3" />
+📊 Data Analysis Dimensions
+Popular Route Analysis: Displays the Top 15 busiest taxi routes
 
-## ✨ 功能特点
+Time Distribution Analysis: Hourly and weekly trip distribution patterns
 
-- **[streamlit.app](https://nyc-taxi-app-ln639f2iesnkuqbr9jwh78.streamlit.app/)** - Interactive web interface
+Hotspot Area Analysis: Distribution of most frequent pickup and dropoff zones
 
-<img width="1440" height="765" alt="1" src="https://github.com/user-attachments/assets/aed33902-3c1a-4711-bca0-5357dd90809b" />
+Fare Analysis: Fare distribution and distance-fare relationship visualization
 
-<img width="1440" height="765" alt="3" src="https://github.com/user-attachments/assets/b80fe89b-8b47-4de3-a706-1bb0a65ec1ce" />
+Passenger Statistics: Trip distribution by passenger count
 
+Clustering Analysis: Visualization of trip pattern clusters
 
-<img width="1440" height="765" alt="2" src="https://github.com/user-attachments/assets/b0d8805e-66d5-47d8-a6e9-a1e84f6b2f8b" />
+Map View: Interactive map displaying hotspot areas
 
-### 📊 数据分析维度
-- **热门路线分析**：展示Top 15最繁忙的出租车路线
-- **时间分布分析**：每小时和每周的行程分布模式
-- **热点区域分析**：上下车最频繁的区域分布
-- **费用分析**：费用分布、距离-费用关系可视化
-- **乘客统计**：不同乘客数量的行程分布
-- **聚类分析**：行程模式聚类结果展示
-- **地图视图**：交互式地图显示热点区域
+🎨 Visualization Features
+Responsive design supporting various screen sizes
 
-### 🎨 可视化特性
-- 响应式设计，支持各种屏幕尺寸
-- 交互式图表（悬停查看详情）
-- 多种图表类型：柱状图、折线图、散点图、气泡图、直方图
-- 交互式地图标记
-- 数据导出功能（CSV格式）
+Interactive charts (hover for details)
 
-## 🚀 快速开始
+Multiple chart types: bar charts, line charts, scatter plots, bubble charts, histograms
 
-### 环境要求
-- Python 3.8+
-- Streamlit 1.28.0+
-- Pandas, NumPy, Plotly
+Interactive map markers
 
-### 安装步骤
+Data export functionality (CSV format)
 
-1. **克隆仓库**
-```bash
+🚀 Quick Start
+Requirements
+Python 3.8+
+
+Streamlit 1.28.0+
+
+Pandas, NumPy, Plotly
+
+Installation Steps
+Clone the Repository
+
+bash
 git clone https://github.com/yourusername/nyc-taxi-streamlit.git
 cd nyc-taxi-streamlit
-安装依赖
+Install Dependencies
 
 bash
 pip install -r requirements.txt
-准备数据
+Prepare Data
 
 bash
-# 确保数据文件位于正确位置
+# Ensure data files are in the correct location
 mkdir -p data/processed
-# 将CSV数据文件放入 data/processed/ 目录
-运行应用
+# Place CSV data files into the data/processed/ directory
+Run the Application
 
 bash
 streamlit run app.py
-📁 项目结构
+📁 Project Structure
+text
 nyc-taxi-streamlit/
-├── app.py                    # 主应用程序
-├── requirements.txt          # Python依赖包
-├── README.md                # 项目说明文档
-├── data/                    # 数据目录
-│   └── processed/           # 处理后的数据文件<img width="1440" height="765" alt="1" src="https://github.com/user-attachments/assets/9ab7bcf7-1a50-4475-9b4d-6b08d546cf5c" />
-<img width="1440" height="765" alt="2" src="https://github.com/user-attachments/assets/e8cc822b-a1cb-4270-9da8-649ba7210e91" />
-<img width="1440" height="765" alt="3" src="https://github.com/user-attachments/assets/cafb4b8e-8118-485b-a934-c568ae0a3c15" />
+├── app.py                    # Main application
+├── requirements.txt          # Python dependencies
+├── README.md                # Project documentation
+├── data/                    # Data directory
+│   └── processed/           # Processed data files
+│       ├── hot_routes.csv           # Popular route data
+│       ├── hourly_traffic.csv       # Hourly traffic data
+│       ├── daily_traffic.csv        # Daily traffic data
+│       ├── pickup_hotspots.csv      # Pickup hotspot data
+│       ├── dropoff_hotspots.csv     # Dropoff hotspot data
+│       ├── passenger_stats.csv      # Passenger statistics
+│       ├── cluster_stats.csv        # Clustering statistics
+│       └── taxi_zones_processed.csv # Geographic location data
+└── .streamlit/              # Streamlit configuration
+    └── config.toml          # Application configuration
+📊 Data Description
+Data File Details
+hot_routes.csv - Popular route statistics
+Columns: PULocationID, DOLocationID, trip_count, avg_distance, avg_fare, avg_tip
 
-│       ├── hot_routes.csv           # 热门路线数据
-│       ├── hourly_traffic.csv       # 小时流量数据
-│       ├── daily_traffic.csv        # 每日流量数据
-│       ├── pickup_hotspots.csv      # 上车热点数据
-│       ├── dropoff_hotspots.csv     # 下车热点数据
-│       ├── passenger_stats.csv      # 乘客统计数据
-│       ├── cluster_stats.csv        # 聚类统计数据
-│       └── taxi_zones_processed.csv # 地理位置数据
-└── .streamlit/              # Streamlit配置文件
-    └── config.toml          # 应用配置
-📊 数据说明
-数据文件说明
-hot_routes.csv - 热门路线统计
+hourly_traffic.csv - Hourly traffic statistics
+Columns: pickup_hour, trip_count, avg_fare, avg_distance
 
-列：PULocationID, DOLocationID, trip_count, avg_distance, avg_fare, avg_tip
+daily_traffic.csv - Daily traffic statistics
+Columns: pickup_dayofweek, trip_count, avg_fare
 
-hourly_traffic.csv - 小时流量统计
+pickup_hotspots.csv - Pickup hotspot statistics
+Columns: PULocationID, pickup_count, avg_fare, avg_distance
 
-列：pickup_hour, trip_count, avg_fare, avg_distance
+dropoff_hotspots.csv - Dropoff hotspot statistics
+Columns: DOLocationID, dropoff_count, avg_fare
 
-daily_traffic.csv - 每日流量统计
+passenger_stats.csv - Passenger statistics
+Columns: passenger_count, trip_count, avg_fare, avg_distance
 
-列：pickup_dayofweek, trip_count, avg_fare
+cluster_stats.csv - Clustering statistics
+Columns: prediction, trip_count, avg_trip_distance, avg_total_amount
 
-pickup_hotspots.csv - 上车热点统计
+taxi_zones_processed.csv - Geographic location data
+Columns: location_id, borough, zone_name, latitude, longitude
 
-列：PULocationID, pickup_count, avg_fare, avg_distance
-
-dropoff_hotspots.csv - 下车热点统计
-
-列：DOLocationID, dropoff_count, avg_fare
-
-passenger_stats.csv - 乘客统计
-
-列：passenger_count, trip_count, avg_fare, avg_distance
-
-cluster_stats.csv - 聚类统计
-
-列：prediction, trip_count, avg_trip_distance, avg_total_amount
-
-taxi_zones_processed.csv - 地理位置数据
-
-列：location_id, borough, zone_name, latitude, longitude
-
-🎯 使用说明
-本地运行
+🎯 Usage Instructions
+Local Execution
 bash
-# 1. 安装依赖
+# 1. Install dependencies
 pip install streamlit pandas plotly numpy
 
-# 2. 运行应用（使用8080端口）
+# 2. Run the app (using port 8080)
 streamlit run app.py --server.port=8080 --server.address=0.0.0.0
 
-# 3. 在浏览器中访问
-#    http://localhost:8080 或
+# 3. Access in browser
+#    http://localhost:8080 or
 #    http://0.0.0.0:8080
-在Google Cloud Shell中运行
+Running in Google Cloud Shell
 bash
-# 设置环境变量禁用WebSocket（Cloud Shell需要）
+# Set environment variables to disable WebSocket (required for Cloud Shell)
 export STREAMLIT_SERVER_ENABLE_WEBSOCKET_COMPRESSION=false
 export STREAMLIT_SERVER_ENABLE_CORS=false
 
-# 运行应用
+# Run the application
 streamlit run app.py --server.port=8080 --server.address=0.0.0.0
 
-# 使用Cloud Shell的Web预览功能访问
-🌐 部署选项
-选项一：Streamlit Cloud（推荐）
-将代码推送到GitHub仓库
+# Use Cloud Shell's Web Preview feature to access
+🌐 Deployment Options
+Option 1: Streamlit Cloud (Recommended)
+Push your code to a GitHub repository
 
-访问 https://share.streamlit.io
+Visit https://share.streamlit.io
 
-使用GitHub账号登录
+Sign in with your GitHub account
 
-点击"New app"，选择仓库和分支
+Click "New app", select repository and branch
 
-设置app.py为入口文件
+Set app.py as the entry point
 
-点击"Deploy"
+Click "Deploy"
 
-选项二：Google Cloud Run
+Option 2: Google Cloud Run
 bash
-# 1. 创建Dockerfile
+# 1. Create Dockerfile
 cat > Dockerfile << EOF
 FROM python:3.9-slim
 WORKDIR /app
@@ -159,31 +150,31 @@ EXPOSE 8080
 CMD ["streamlit", "run", "app.py", "--server.port=8080", "--server.address=0.0.0.0"]
 EOF
 
-# 2. 构建和推送镜像
+# 2. Build and push image
 gcloud builds submit --tag gcr.io/your-project-id/nyc-taxi-dashboard
 gcloud run deploy nyc-taxi-dashboard --image gcr.io/your-project-id/nyc-taxi-dashboard --platform managed --region us-central1 --allow-unauthenticated
-选项三：Heroku
+Option 3: Heroku
 bash
-# 1. 创建Procfile
+# 1. Create Procfile
 echo "web: streamlit run app.py --server.port=$PORT --server.address=0.0.0.0" > Procfile
 
-# 2. 创建runtime.txt
+# 2. Create runtime.txt
 echo "python-3.9.13" > runtime.txt
 
-# 3. 部署到Heroku
+# 3. Deploy to Heroku
 heroku create nyc-taxi-dashboard
 git push heroku main
-选项四：本地网络共享
+Option 4: Local Network Sharing
 bash
-# 1. 在本地运行应用
+# 1. Run the app locally
 streamlit run app.py --server.port=8080
 
-# 2. 使用ngrok暴露到公网
+# 2. Expose to the internet using ngrok
 ngrok http 8080
 
-# 3. 分享ngrok提供的URL
-🔧 配置说明
-Streamlit配置 (.streamlit/config.toml)
+# 3. Share the URL provided by ngrok
+🔧 Configuration
+Streamlit Configuration (.streamlit/config.toml)
 toml
 [server]
 port = 8080
@@ -202,77 +193,73 @@ backgroundColor = "#FFFFFF"
 secondaryBackgroundColor = "#F0F2F6"
 textColor = "#262730"
 font = "sans serif"
-环境变量
+Environment Variables
 bash
-# 优化Cloud Shell环境
+# Optimize for Cloud Shell environment
 export STREAMLIT_SERVER_ENABLE_WEBSOCKET_COMPRESSION=false
 export STREAMLIT_SERVER_ENABLE_CORS=false
 export STREAMLIT_SERVER_HEADLESS=true
 export STREAMLIT_BROWSER_GATHER_USAGE_STATS=false
-📈 数据分析洞察
-主要发现
-高峰时段：识别一天中最繁忙的时间段
+📈 Data Analysis Insights
+Key Findings
+Peak Hours: Identification of the busiest time periods during the day
 
-热门路线：发现最常使用的出租车路线
+Popular Routes: Discovery of the most frequently used taxi routes
 
-费用模式：分析距离和费用的关系
+Fare Patterns: Analysis of the relationship between distance and fare
 
-区域热点：识别上下车最频繁的区域
+Zone Hotspots: Identification of areas with the highest pickup and dropoff frequency
 
-乘客模式：分析不同乘客数量的行程特征
+Passenger Patterns: Analysis of trip characteristics by passenger count
 
-行程聚类：发现不同类型的行程模式
+Trip Clustering: Discovery of different types of trip patterns
 
-业务应用
-出租车调度优化
+Business Applications
+Taxi dispatch optimization
 
-价格策略制定
+Pricing strategy formulation
 
-区域服务规划
+Regional service planning
 
-资源分配决策支持
+Resource allocation decision support
 
-🛠️ 技术栈
-前端框架: Streamlit
+🛠️ Tech Stack
+Frontend Framework: Streamlit
 
-可视化库: Plotly, Streamlit内置图表
+Visualization Libraries: Plotly, Streamlit built-in charts
 
-数据处理: Pandas, NumPy
+Data Processing: Pandas, NumPy
 
-地图展示: Streamlit地图组件
+Map Display: Streamlit map components
 
-部署平台: Streamlit Cloud / Google Cloud Run / Heroku
+Deployment Platforms: Streamlit Cloud / Google Cloud Run / Heroku
 
-🤝 贡献指南
-Fork本仓库
+🤝 Contributing
+Fork this repository
 
-创建功能分支 (git checkout -b feature/AmazingFeature)
+Create a feature branch (git checkout -b feature/AmazingFeature)
 
-提交更改 (git commit -m 'Add some AmazingFeature')
+Commit your changes (git commit -m 'Add some AmazingFeature')
 
-推送到分支 (git push origin feature/AmazingFeature)
+Push to the branch (git push origin feature/AmazingFeature)
 
-打开Pull Request
+Open a Pull Request
 
-📄 许可证
-本项目采用 MIT 许可证 - 查看 LICENSE 文件了解详情
+📄 License
+This project is licensed under the MIT License - see the LICENSE file for details.
 
-📞 联系方式
-如有问题或建议，请通过以下方式联系：
+📞 Contact
+For questions or suggestions, please reach out via:
 
-项目Issues: GitHub Issues
+Project Issues: GitHub Issues
 
-邮箱: your.email@example.com
+Email: your.email@example.com
 
-🙏 致谢
-数据来源：纽约市出租车和豪华轿车委员会（TLC）
+🙏 Acknowledgments
+Data Source: New York City Taxi and Limousine Commission (TLC)
 
-Streamlit团队提供的优秀框架
+Streamlit team for the excellent framework
 
-所有贡献者和用户
+All contributors and users
 
-⭐ 如果这个项目对你有帮助，请给它一个Star！
-
-
-
-
+⭐ If you find this project helpful, please give it a Star!

@@ -4,11 +4,12 @@
 
 ## ✨ 功能特点
 
+<img width="1440" height="765" alt="1" src="https://github.com/user-attachments/assets/8d7087d1-481e-49bd-9e76-facc13744633" />
 
-<img width="1440" height="765" alt="1" src="https://github.com/user-attachments/assets/8381b854-174a-4d50-8e1f-5b0d56d5fe56" />
+<img width="1440" height="765" alt="3" src="https://github.com/user-attachments/assets/0117324b-8538-4ac7-83c2-4de8995deb80" />
 
-<img width="1440" height="765" alt="3" src="https://github.com/user-attachments/assets/2d8a1063-f66d-42e5-a80f-8572066803e6" />
-<img width="1440" height="765" alt="2" src="https://github.com/user-attachments/assets/155162d6-970c-42ac-aeae-38c9dd9e3cc3" />
+<img width="1440" height="765" alt="2" src="https://github.com/user-attachments/assets/5e185320-85eb-4511-834f-6ac0265f4fa5" />
+
 
 
 ### 📊 数据分析维度
@@ -270,4 +271,5 @@ Streamlit团队提供的优秀框架
 所有贡献者和用户
 
 ⭐ 如果这个项目对你有帮助，请给它一个Star！
+
 

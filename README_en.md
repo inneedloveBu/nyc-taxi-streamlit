@@ -5,11 +5,13 @@
 ## ✨ 功能特点
 
 - **[streamlit.app](https://nyc-taxi-app-ln639f2iesnkuqbr9jwh78.streamlit.app/)** - Interactive web interface
-<img width="1440" height="765" alt="1" src="https://github.com/user-attachments/assets/8381b854-174a-4d50-8e1f-5b0d56d5fe56" />
 
-<img width="1440" height="765" alt="3" src="https://github.com/user-attachments/assets/2d8a1063-f66d-42e5-a80f-8572066803e6" />
-<img width="1440" height="765" alt="2" src="https://github.com/user-attachments/assets/155162d6-970c-42ac-aeae-38c9dd9e3cc3" />
+<img width="1440" height="765" alt="1" src="https://github.com/user-attachments/assets/aed33902-3c1a-4711-bca0-5357dd90809b" />
 
+<img width="1440" height="765" alt="3" src="https://github.com/user-attachments/assets/b80fe89b-8b47-4de3-a706-1bb0a65ec1ce" />
+
+
+<img width="1440" height="765" alt="2" src="https://github.com/user-attachments/assets/b0d8805e-66d5-47d8-a6e9-a1e84f6b2f8b" />
 
 ### 📊 数据分析维度
 - **热门路线分析**：展示Top 15最繁忙的出租车路线
@@ -270,6 +272,7 @@ Streamlit团队提供的优秀框架
 所有贡献者和用户
 
 ⭐ 如果这个项目对你有帮助，请给它一个Star！
+
 
 
 

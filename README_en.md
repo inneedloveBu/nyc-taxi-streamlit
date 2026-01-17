@@ -2,7 +2,20 @@
 An interactive Streamlit-based dashboard for visualizing and analyzing NYC taxi data processed with Spark, providing rich insights and analytics.
 
 ✨ Features
-<img width="1440" height="765" alt="1" src="https://github.com/user-attachments/assets/8381b854-174a-4d50-8e1f-5b0d56d5fe56" /> <img width="1440" height="765" alt="3" src="https://github.com/user-attachments/assets/2d8a1063-f66d-42e5-a80f-8572066803e6" /> <img width="1440" height="765" alt="2" src="https://github.com/user-attachments/assets/155162d6-970c-42ac-aeae-38c9dd9e3cc3" />
+
+
+- **[streamlit.app](https://nyc-taxi-app-ln639f2iesnkuqbr9jwh78.streamlit.app/)** - Interactive web interface
+
+<img width="1440" height="765" alt="1" src="https://github.com/user-attachments/assets/aed33902-3c1a-4711-bca0-5357dd90809b" />
+
+<img width="1440" height="765" alt="3" src="https://github.com/user-attachments/assets/b80fe89b-8b47-4de3-a706-1bb0a65ec1ce" />
+
+
+<img width="1440" height="765" alt="2" src="https://github.com/user-attachments/assets/b0d8805e-66d5-47d8-a6e9-a1e84f6b2f8b" />
+
+
+
+
 📊 Data Analysis Dimensions
 Popular Route Analysis: Displays the Top 15 busiest taxi routes
 
@@ -261,5 +274,6 @@ Data Source: New York City Taxi and Limousine Commission (TLC)
 Streamlit team for the excellent framework
 
 All contributors and users
+
 
 ⭐ If you find this project helpful, please give it a Star!

@@ -3,7 +3,7 @@
 一个基于Streamlit的交互式纽约出租车数据分析仪表板，可视化Spark处理结果，提供丰富的分析和洞察。
 
 ## ✨ 功能特点
-
+https://nyc-taxi-app-ln639f2iesnkuqbr9jwh78.streamlit.app/
 
 <img width="1440" height="765" alt="1" src="https://github.com/user-attachments/assets/8381b854-174a-4d50-8e1f-5b0d56d5fe56" />
 
@@ -270,4 +270,5 @@ Streamlit团队提供的优秀框架
 所有贡献者和用户
 
 ⭐ 如果这个项目对你有帮助，请给它一个Star！
+
 

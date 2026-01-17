@@ -4,6 +4,8 @@
 
 ## ✨ 功能特点
 
+- **[streamlit.app](https://nyc-taxi-app-ln639f2iesnkuqbr9jwh78.streamlit.app/)** - Interactive web interface
+
 <img width="1440" height="765" alt="1" src="https://github.com/user-attachments/assets/8d7087d1-481e-49bd-9e76-facc13744633" />
 
 <img width="1440" height="765" alt="3" src="https://github.com/user-attachments/assets/0117324b-8538-4ac7-83c2-4de8995deb80" />
@@ -271,5 +273,6 @@ Streamlit团队提供的优秀框架
 所有贡献者和用户
 
 ⭐ 如果这个项目对你有帮助，请给它一个Star！
+
 
 

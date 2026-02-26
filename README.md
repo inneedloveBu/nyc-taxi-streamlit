@@ -1,7 +1,7 @@
 # 🚕 纽约出租车数据分析 🚕 NYC Taxi Analysis Dashboard
 
 
-[![bilibili](https://img.shields.io/badge/🎥-Video%20on%20Bilibili-yellow)](https://www.bilibili.com/video/BV1NArXB4EU5/?share_source=copy_web&vd_source=56cdc7ef44ed1ee2c9b9515febf8e9ce&t=1)
+[![bilibili](https://img.shields.io/badge/🎥-Video%20on%20Bilibili-red)](https://www.bilibili.com/video/BV1NArXB4EU5/?share_source=copy_web&vd_source=56cdc7ef44ed1ee2c9b9515febf8e9ce&t=1)
 
 [![streamlit](https://img.shields.io/badge/🤗-streamlit-blue)](https://nyc-taxi-app-ln639f2iesnkuqbr9jwh78.streamlit.app/)
 [![GitHub](https://img.shields.io/badge/📂-GitHub-black)](https://github.com/inneedloveBu/nyc-taxi-streamlit)
@@ -524,6 +524,7 @@ Streamlit团队提供的优秀框架
 所有贡献者和用户
 
 ⭐ 如果这个项目对你有帮助，请给它一个Star！
+
 
 
 
